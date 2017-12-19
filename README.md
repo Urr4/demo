@@ -11,6 +11,8 @@ Run this Cypher statement to get the test-data:
 ```
 
 Afterwards run `mvn clean package` followed by `java -jar target/demo-swarm.jar`.
-This starts a Wildfly, and sending a GET to `localhost:8080/users/{userId}` should throw the `Stackoverflow`-Exception.
+This starts a Wildfly, and sending a GET to `localhost:8080/users/{userId}` (where `{userId}` is the Id, the User got
+ in your DB) should throw the 
+`Stackoverflow`-Exception.
 
 Thanks for the help :-)
