@@ -1,5 +1,6 @@
 package de.urr4.demo.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.neo4j.ogm.annotation.*;
 
 @RelationshipEntity(type = "LIKES")
@@ -12,6 +13,7 @@ public class LikedBook {
     private String how;
 
     @StartNode
+    @JsonIgnore
     private User user;
 
     @EndNode
